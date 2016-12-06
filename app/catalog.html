@@ -40,11 +40,69 @@
     </header>
     <main>
         <div class="container">
-            <form class="sorting-form" action="index.html" method="post">
-                <fieldset>
-                    <legend>стоимость:</legend>
-                </fieldset>
-            </form>
+            <div class="sorting__wrap">
+                <form class="sorting-form" action="index.html" method="post">
+                    <fieldset class="cost-form">
+                        <legend class="cost-form__title">стоимость:</legend>
+                        <div class="range__wrap">
+                            <div class="range">
+                                <div class="range__line">
+                                    <div class="range__line_active">
+                                        <div class="range__line_min">
+                                        </div>
+                                        <div class="range__line_max">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__range">
+                                ОТ
+                                <input class="price__min" type="text" name="price__min" value="0"> ДО
+                                <input class="price__max" type="text" name="price__max" value="15000">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="grid-form">
+                        <legend class="grid-form__title">сетка:</legend>
+                        <ul class="grid-form__list">
+                            <li class="grid-form__item">
+                                <input id="grid-form__adaptive" type="radio" name="grid-form" value=""><label for="grid-form__adaptive">Адаптивная</label>
+                            </li>
+                            <li class="grid-form__item">
+                                <input id="grid-form__fixed" type="radio" name="grid-form" value=""><label for="grid-form__fixed">Фиксированная</label>
+                            </li>
+                            <li class="grid-form__item">
+                                <input id="grid-form__rubber" type="radio" name="grid-form" value=""><label for="grid-form__rubber">Резиновая</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="features-form">
+                        <legend class="features-form__title">особенности:</legend>
+                        <ul class="features-form__list">
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_slider"><label for="features-form__item_slider">Слайдер</label></li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_features"><label for="features-form__item_features">Блок преимуществ</label></li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_news"><label for="features-form__item_news">Новости</label></li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_gallery"><label for="features-form__item_gallery">Галерея</label></li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_basket"><label for="features-form__item_basket">Корзина</label></li>
+                        </ul>
+                    </fieldset>
+                    <button class="sorting-form_btn btn" type="submit" name="sort_btn">показать</button>
+                </form>
+                <div class="template__wrap">
+                    <div class="template-sorting__wrap">
+                        <span class="template-sorting__title"></span>
+                        <ul class="template-sorting__list">
+                            <li class="template-sorting__item"><a class="template-sorting__to-cost" href="#">по цене</a></li>
+                            <li class="template-sorting__item"><a class="template-sorting__to-type" href="#">по типу</a></li>
+                            <li class="template-sorting__item"><a class="template-sorting__to-name" href="#">по названию</a></li>
+                        </ul>
+                        <ul class="sorting-to-value__list">
+                            <li class="sorting-to-value__item"><a class="value__low" href="#"></a></li>
+                            <li class="sorting-to-value__item"><a class="value__high" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <div class="map">

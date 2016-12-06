@@ -67,11 +67,13 @@ header {
     color: black;
     opacity: 0.3;
 }
+
 .main-menu__item.active .main-menu__link::after {
     content: "";
     display: block;
     border-bottom: 2px solid #fb565a;
 }
+
 .user-nav {
     position: relative;
     display: inline-block;
@@ -89,7 +91,6 @@ header {
     width: 15px;
     height: 15px;
     background-position: -5px -5px;
-
 }
 
 .slider {
@@ -310,7 +311,7 @@ h2.about__title {
     height: 15px;
     top: 32px;
     left: 27px;
-    background-position: -52px -36px;
+    background-position: -223px -55px;
 }
 
 .btn-fb::before {
@@ -318,7 +319,7 @@ h2.about__title {
     height: 22px;
     top: 27px;
     left: 31px;
-    background-position: -30px -5px;
+    background-position: -100px -55px;
 }
 
 .btn-inst::before {
@@ -326,7 +327,7 @@ h2.about__title {
     height: 21px;
     top: 28px;
     left: 28px;
-    background-position: -52px -5px;
+    background-position: -122px -55px;
 }
 
 .social {
@@ -444,13 +445,194 @@ h2.about__title {
 
 .main-heading {
     color: black;
-font-size: 55px;
-font-weight: 500;
-line-height: 55px;
-text-align: center;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: center;
+    padding-bottom: 117px;
 }
 
 .sorting-form {
     width: 260px;
-    
+}
+
+.range__wrap {
+    width: 260px;
+}
+
+.range {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 27px;
+    box-sizing: border-box;
+    width: 260px;
+    height: 80px;
+    background-color: #eee;
+    border-radius: 3px;
+    margin-bottom: 14px;
+}
+
+.range__line {
+    display: inline-block;
+    width: 219px;
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.range__line_active {
+    position: relative;
+    width: 152px;
+    height: inherit;
+    margin-left: 15px;
+    background-color: #00ca74;
+}
+
+.range__line_min, .range__line_max {
+    position: absolute;
+    top: -8px;
+    display: block;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range__line_min::after, .range__line_max::after {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ababab;
+}
+
+.range__line_max {
+    right: 0;
+}
+
+.range__line_min {
+    left: 0;
+}
+
+.cost-form, .grid-form, .features-form {
+    border: none;
+    outline: none;
+}
+
+.price__range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.price__min, .price__max {
+    width: 80px;
+    height: 38px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.cost-form__title, .grid-form__title, .features-form__title {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 57px;
+}
+
+.grid-form {
+    margin-bottom: 51px;
+}
+
+.grid-form__title, .features-form__title {
+    margin-bottom: 20px;
+}
+
+.grid-form__list, .features-form__list {
+    padding: 0;
+    list-style: none;
+}
+
+.grid-form__item, .features-form__item {
+    margin-bottom: 25px;
+    display: block;
+    padding-left: 38px;
+}
+
+.grid-form input, .features-form input {
+    display: none;
+}
+
+.grid-form label, .features-form label {
+    position: relative;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.grid-form label::before {
+    content: "";
+    display: block;
+    left: -38px;
+    top: -3px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -153px -55px;
+    background-repeat: no-repeat;
+    opacity: .4;
+}
+
+.grid-form label:hover::before, .features-form label:hover::before {
+    opacity: 1;
+}
+
+.grid-form input:checked~label::before {
+    background-position: -188px -55px;
+}
+
+.features-form label::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -38px;
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    background-position: -30px -55px;
+    opacity: .4;
+}
+
+.features-form input:checked~label::before {
+    width: 27px;
+    height: 23px;
+    background-position: -63px -55px;
+}
+
+.sorting-form_btn {
+    color: black;
+    width: 260px;
+    background-color: #eee;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+.sorting-form_btn:hover {
+    background-color: #dfdfdf;
+    color: black;
+}
+.sorting-form_btn:active {
+    color: rgba(0, 0, 0, .3);
 }
