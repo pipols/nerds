@@ -1,29 +1,59 @@
 .sprite {
-    background-image: url(spritesheet.png);
+    background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
+}
+
+.sprite-browser-header {
+    width: 360px;
+    height: 40px;
+    background-position: -5px -5px;
 }
 
 .sprite-cart-icon {
     width: 15px;
     height: 15px;
-    background-position: -5px -5px;
+    background-position: -5px -55px;
+}
+
+.sprite-checkbox-off {
+    width: 23px;
+    height: 23px;
+    background-position: -30px -55px;
+}
+
+.sprite-checkbox-on {
+    width: 27px;
+    height: 23px;
+    background-position: -63px -55px;
 }
 
 .sprite-fb-icon {
     width: 12px;
     height: 22px;
-    background-position: -30px -5px;
+    background-position: -100px -55px;
 }
 
 .sprite-insta-icon {
     width: 21px;
     height: 21px;
-    background-position: -52px -5px;
+    background-position: -122px -55px;
+}
+
+.sprite-radio-off {
+    width: 25px;
+    height: 25px;
+    background-position: -153px -55px;
+}
+
+.sprite-radio-on {
+    width: 25px;
+    height: 25px;
+    background-position: -188px -55px;
 }
 
 .sprite-vk-icon {
     width: 26px;
     height: 15px;
-    background-position: -52px -36px;
+    background-position: -223px -55px;
 }
