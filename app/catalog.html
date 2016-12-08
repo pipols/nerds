@@ -17,7 +17,7 @@
                     <nav class="main-menu">
                         <ul class="main-menu__list">
                             <li class="main-menu__item">
-                                <a class="main-menu__link" href="#">студия</a>
+                                <a class="main-menu__link" href="index.html">студия</a>
                             </li>
                             <li class="main-menu__item">
                                 <a class="main-menu__link" href="#">клиенты</a>
@@ -48,10 +48,8 @@
                             <div class="range">
                                 <div class="range__line">
                                     <div class="range__line_active">
-                                        <div class="range__line_min">
-                                        </div>
-                                        <div class="range__line_max">
-                                        </div>
+                                        <div class="range__line_min"></div>
+                                        <div class="range__line_max"></div>
                                     </div>
                                 </div>
                             </div>
@@ -66,48 +64,146 @@
                         <legend class="grid-form__title">сетка:</legend>
                         <ul class="grid-form__list">
                             <li class="grid-form__item">
-                                <input id="grid-form__adaptive" type="radio" name="grid-form" value=""><label for="grid-form__adaptive">Адаптивная</label>
+                                <input id="grid-form__adaptive" type="radio" name="grid-form" value="">
+                                <label for="grid-form__adaptive">Адаптивная</label>
                             </li>
                             <li class="grid-form__item">
-                                <input id="grid-form__fixed" type="radio" name="grid-form" value=""><label for="grid-form__fixed">Фиксированная</label>
+                                <input id="grid-form__fixed" type="radio" name="grid-form" value="">
+                                <label for="grid-form__fixed">Фиксированная</label>
                             </li>
                             <li class="grid-form__item">
-                                <input id="grid-form__rubber" type="radio" name="grid-form" value=""><label for="grid-form__rubber">Резиновая</label>
+                                <input id="grid-form__rubber" type="radio" name="grid-form" value="">
+                                <label for="grid-form__rubber">Резиновая</label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset class="features-form">
                         <legend class="features-form__title">особенности:</legend>
                         <ul class="features-form__list">
-                            <li class="features-form__item"><input type="checkbox" id="features-form__item_slider"><label for="features-form__item_slider">Слайдер</label></li>
-                            <li class="features-form__item"><input type="checkbox" id="features-form__item_features"><label for="features-form__item_features">Блок преимуществ</label></li>
-                            <li class="features-form__item"><input type="checkbox" id="features-form__item_news"><label for="features-form__item_news">Новости</label></li>
-                            <li class="features-form__item"><input type="checkbox" id="features-form__item_gallery"><label for="features-form__item_gallery">Галерея</label></li>
-                            <li class="features-form__item"><input type="checkbox" id="features-form__item_basket"><label for="features-form__item_basket">Корзина</label></li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_slider">
+                                <label for="features-form__item_slider">Слайдер</label>
+                            </li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_features">
+                                <label for="features-form__item_features">Блок преимуществ</label>
+                            </li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_news">
+                                <label for="features-form__item_news">Новости</label>
+                            </li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_gallery">
+                                <label for="features-form__item_gallery">Галерея</label>
+                            </li>
+                            <li class="features-form__item"><input type="checkbox" id="features-form__item_basket">
+                                <label for="features-form__item_basket">Корзина</label>
+                            </li>
                         </ul>
                     </fieldset>
                     <button class="sorting-form_btn btn" type="submit" name="sort_btn">показать</button>
                 </form>
                 <div class="template__wrap">
-                    <div class="template-sorting__wrap">
-                        <span class="template-sorting__title"></span>
-                        <ul class="template-sorting__list">
-                            <li class="template-sorting__item"><a class="template-sorting__to-cost" href="#">по цене</a></li>
-                            <li class="template-sorting__item"><a class="template-sorting__to-type" href="#">по типу</a></li>
-                            <li class="template-sorting__item"><a class="template-sorting__to-name" href="#">по названию</a></li>
-                        </ul>
-                        <ul class="sorting-to-value__list">
-                            <li class="sorting-to-value__item"><a class="value__low" href="#"></a></li>
-                            <li class="sorting-to-value__item"><a class="value__high" href="#"></a></li>
-                        </ul>
+                    <div class="template__header">
+                        <span class="template-sorting__title">сортировать:</span>
+                        <div class="template-sorting__wrap">
+                            <ul class="template-sorting__list">
+                                <li class="template-sorting__item">
+                                    <a class="template-sorting__to-cost" href="#">по цене</a>
+                                </li>
+                                <li class="template-sorting__item">
+                                    <a class="template-sorting__to-type" href="#">по типу</a>
+                                </li>
+                                <li class="template-sorting__item">
+                                    <a class="template-sorting__to-name" href="#">по названию</a>
+                                </li>
+                            </ul>
+                            <ul class="sorting-to-value__list">
+                                <li class="sorting-to-value__item">
+                                    <a class="value__low" href="#"></a>
+                                </li>
+                                <li class="sorting-to-value__item">
+                                    <a class="value__high" href="#"></a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
+                    <ul class="template__list">
+                        <li class="template__item">
+                            <div class="template-item__wrap">
+                                <div class="template-item__main">
+                                    <img src="img/img-sedona.jpg" alt="" class="template-item__img" />
+                                </div>
+                                <div class="template-popup">
+                                    <h3 class="template-popup__title">Sedona</h3>
+                                    <p class="template-popup__text">Информационный сайт для туристов</p>
+                                    <button class="template-popup__btn btn-red">9 900 руб.</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="template__item">
+                            <div class="template-item__wrap">
+                                <div class="template-item__main">
+                                    <img src="img/img-pink.jpg" alt="" class="template-item__img" />
+                                </div>
+                                <div class="template-popup">
+                                    <h3 class="template-popup__title">Pink App</h3>
+                                    <p class="template-popup__text">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <button class="template-popup__btn btn-red">9 900 руб.</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="template__item">
+                            <div class="template-item__wrap">
+                                <div class="template-item__main">
+                                    <img src="img/img-barbershop.jpg" alt="" class="template-item__img" />
+                                </div>
+                                <div class="template-popup">
+                                    <h3 class="template-popup__title">Barbershop</h3>
+                                    <p class="template-popup__text">Сайт салоны красоты.Для мужчин, да.</p>
+                                    <button class="template-popup__btn btn-red ">9 900 руб.</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="template__item">
+                            <div class="template-item__wrap">
+                                <div class="template-item__main">
+                                    <img src="img/img-mishka.jpg" alt="" class="template-item__img" />
+                                </div>
+                                <div class="template-popup">
+                                    <h3 class="template-popup__title">MISHKA</h3>
+                                    <p class="template-popup__text">Интернет-магазин вязаных игрушек</p>
+                                    <button class="template-popup__btn btn-red">9 900 руб.</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="template__item">
+                            <div class="template-item__wrap">
+                                <div class="template-item__main">
+                                    <img src="img/img-aplus.jpg" alt="" class="template-item__img" />
+                                </div>
+                                <div class="template-popup">
+                                    <h3 class="template-popup__title">A Plus</h3>
+                                    <p class="template-popup__text">Лендинг курсов повышения квалификации</p>
+                                    <button class="template-popup__btn btn-red">9 900 руб.</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="template__item">
+                            <div class="template-item__wrap">
+                                <div class="template-item__main">
+                                    <img src="img/img-kvast.jpg" alt="" class="template-item__img" />
+                                </div>
+                                <div class="template-popup">
+                                    <h3 class="template-popup__title">КВАСТ</h3>
+                                    <p class="template-popup__text">Промо-сайт производителя крафтового кваса</p>
+                                    <button class="template-popup__btn btn-red">9 900 руб.</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
-    <div class="map">
-
-    </div>
+    <div class="map"></div>
     <footer>
         <div class="container">
             <div class="footer_wrap">
